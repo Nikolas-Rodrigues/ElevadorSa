@@ -11,9 +11,11 @@ function desce() {
     const elevadorFechado = document.querySelector(".elevadorImg1")
     const element = document.querySelector(".bntBaixo")
 
-    if (LugarElevador == 1) {
-        elevadorAbrido.style.cssText = styleBlock
 
+
+
+    if(LugarElevador == 1) {
+        elevadorAbrido.style.cssText = styleBlock
         const style = `
     background-color: red;`
         const element = document.querySelector(".bntBaixo")
@@ -42,8 +44,6 @@ function desce() {
             elevadorAbrido.style.cssText = styleBlock
 
         }, "3000");
-        LugarElevador = 1
-
 
 
     } else {
@@ -81,8 +81,9 @@ function desce() {
             cadeirante.style.cssText = styleBlock
             cadeirante.style.cssText = sobe
         }, "4000");
-        LugarElevador = 1
+
     }
+    LugarElevador = 1
 }
 
 function subi() {
